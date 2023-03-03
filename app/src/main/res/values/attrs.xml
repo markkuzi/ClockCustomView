@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ClockCustomVIew">
+
+        <attr name="hourHandColor" format="color"/>
+        <attr name="hourHandWidth" format="dimension"/>
+        <attr name="minuteHandColor" format="color"/>
+        <attr name="minuteHandWidth" format="dimension"/>
+        <attr name="secondHandColor" format="color"/>
+        <attr name="secondHandWidth" format="dimension"/>
+        <attr name="clockDivisionColor" format="color"/>
+        <attr name="strokeClockColor" format="color"/>
+        <attr name="strokeClockWidth" format="dimension"/>
+        <attr name="numberColor" format="color"/>
+        <attr name="numberSize" format="dimension"/>
+        <attr name="clockBackgroundColor" format="color"/>
+        <attr name="drawHourHand" format="boolean"/>
+        <attr name="drawMinuteHand" format="boolean"/>
+        <attr name="drawSecondHand" format="boolean"/>
+    </declare-styleable>
+
+    <attr name="clockCustomViewStyle" format="reference"/>
+
+</resources>
