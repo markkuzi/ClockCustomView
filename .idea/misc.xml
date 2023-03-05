@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Mark - Android Study/ClockCustomView/app/src/main/res/layout-land/time_fragment.xml" value="0.25" />
         <entry key="..\:/Mark - Android Study/ClockCustomView/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Mark - Android Study/ClockCustomView/app/src/main/res/layout/time_fragment.xml" value="0.25" />
       </map>
