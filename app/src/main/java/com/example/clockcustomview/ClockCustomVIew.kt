@@ -2,7 +2,10 @@ package com.example.clockcustomview
 
 import android.content.Context
 import android.graphics.*
+import android.os.Parcel
+import android.os.Parcelable
 import android.util.AttributeSet
+import android.util.Log
 import android.util.TypedValue
 import android.view.View
 import java.util.*
@@ -78,11 +81,11 @@ class ClockCustomVIew(
 
     private fun drawClockDivision(canvas: Canvas?) {
         for (i in 1..60) {
-            clockDivisionPaint.strokeWidth = minuteHandWidth
+            clockDivisionPaint.strokeWidth = getRadius()/42
             val radius = getRadius()-50f
             var startRatio = 5.6f
             if (i % 5 == 0){
-                clockDivisionPaint.strokeWidth = minuteHandWidth
+                clockDivisionPaint.strokeWidth = getRadius()/38
                 startRatio = 5.3f
             }
             val (x1,y1) = getCoordinates(i * 1f, startRatio / 6f * radius)
@@ -92,7 +95,6 @@ class ClockCustomVIew(
     }
 
     private fun drawHands(canvas: Canvas?) {
-        //timeZon = clockCustomTimeZone?.timeZone.toString() ?: "GMT"
         date = Calendar.getInstance(TimeZone.getTimeZone(timeZon))
         hour = date[Calendar.HOUR] + date[Calendar.MINUTE] / 60f
         minute = date[Calendar.MINUTE] + date[Calendar.SECOND] / 60f
@@ -100,7 +102,7 @@ class ClockCustomVIew(
         drawHand(canvas,hour ,hourHandPaint, getRadius()/3)
         drawHand(canvas, minute, minuteHandPaint, getRadius()/2)
         drawHand(canvas, second, secondHandPaint,  getRadius()-50f)
-        canvas?.drawCircle(width/2f, height/2f, 20f, secondHandPaint)
+        canvas?.drawCircle(width/2f, height/2f, getRadius()/15, secondHandPaint)
     }
 
     private fun drawHand(canvas: Canvas?, date: Float, paint: Paint, handLength: Float) {

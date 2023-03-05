@@ -14,10 +14,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btn.setOnClickListener {
-            binding.customCLock3.setTimeZone("Asia/Tokyo")
-        }
-
+        val fragment = TimeFragment()
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.container, fragment)
+            .commit()
 
     }
 }

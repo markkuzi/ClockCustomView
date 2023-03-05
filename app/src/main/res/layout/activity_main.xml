@@ -6,85 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <com.example.clockcustomview.ClockCustomVIew
-        android:id="@+id/customCLock7"
-        android:layout_width="206dp"
-        android:layout_height="213dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.822" />
-
-    <com.example.clockcustomview.ClockCustomVIew
-        android:id="@+id/customCLock5"
-        android:layout_width="206dp"
-        android:layout_height="213dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.822" />
-
-    <com.example.clockcustomview.ClockCustomVIew
-        android:id="@+id/customCLock6"
-        android:layout_width="130dp"
-        android:layout_height="142dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintTop_toBottomOf="@id/customCLock6"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-    <com.example.clockcustomview.ClockCustomVIew
-        android:id="@+id/customCLock4"
-        android:layout_width="206dp"
-        android:layout_height="213dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411" />
-
-    <com.example.clockcustomview.ClockCustomVIew
-        android:id="@+id/customCLock3"
-        android:layout_width="206dp"
-        android:layout_height="213dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411" />
-
-    <com.example.clockcustomview.ClockCustomVIew
-        android:id="@+id/customCLock"
-        android:layout_width="206dp"
-        android:layout_height="213dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

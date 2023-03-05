@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/centerHorizontalGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/centerVerticalGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/changeTimeZoneBtn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/customCLock1"
+        app:layout_constraintStart_toStartOf="@id/startGuideLine"
+        app:layout_constraintEnd_toEndOf="@id/centerVerticalGuideLine"
+        tools:text = "Москва"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/changeTimeZoneBtn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/customCLock2"
+        app:layout_constraintStart_toStartOf="@id/centerVerticalGuideLine"
+        app:layout_constraintEnd_toEndOf="@id/endGuideLine"
+        tools:text = "Москва"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/changeTimeZoneBtn3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/customCLock3"
+        app:layout_constraintStart_toStartOf="@id/startGuideLine"
+        app:layout_constraintEnd_toEndOf="@id/centerVerticalGuideLine"
+        tools:text = "Москва"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/changeTimeZoneBtn4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/customCLock4"
+        app:layout_constraintStart_toStartOf="@id/centerVerticalGuideLine"
+        app:layout_constraintEnd_toEndOf="@id/endGuideLine"
+        tools:text = "Москва"/>
+    <com.example.clockcustomview.ClockCustomVIew
+        android:id="@+id/customCLock1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/startGuideLine"
+        app:layout_constraintEnd_toEndOf="@id/centerVerticalGuideLine"
+        app:layout_constraintBottom_toBottomOf="@id/centerHorizontalGuideLine"
+        app:layout_constraintDimensionRatio="H, 1"/>
+    <com.example.clockcustomview.ClockCustomVIew
+        android:id="@+id/customCLock2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/centerVerticalGuideLine"
+        app:layout_constraintEnd_toEndOf="@id/endGuideLine"
+        app:layout_constraintBottom_toBottomOf="@id/centerHorizontalGuideLine"
+        app:layout_constraintDimensionRatio="H, 1"/>
+    <com.example.clockcustomview.ClockCustomVIew
+        android:id="@+id/customCLock3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/startGuideLine"
+        app:layout_constraintEnd_toEndOf="@id/centerVerticalGuideLine"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideLine"
+        app:layout_constraintDimensionRatio="H, 1"/>
+    <com.example.clockcustomview.ClockCustomVIew
+        android:id="@+id/customCLock4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/centerVerticalGuideLine"
+        app:layout_constraintEnd_toEndOf="@id/endGuideLine"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGuideLine"
+        app:layout_constraintDimensionRatio="H, 1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
